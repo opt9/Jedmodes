@@ -24,6 +24,7 @@ dfa_define_highlight_rule("#.*$", "comment", mode);
 dfa_define_highlight_rule(";.*$", "comment", mode);
 dfa_define_highlight_rule("\[(.*)\]"R, "keyword0", mode);
 dfa_define_highlight_rule("[\+\-0-9]*"R, "number", mode);
+dfa_define_highlight_rule("['\"].*['\"]", "string", mode);
 dfa_define_highlight_rule("=", "delimiter", mode);
 
 dfa_build_highlight_table(mode);
